@@ -18,8 +18,22 @@ class SeekingPage(webapp2.RequestHandler):
     def get(self):
         welcome_template = the_jinja_env.get_template('templates/seeking.html')
         self.response.write(welcome_template.render())
-
+class VolunteerPage(webapp2.RequestHandler):
+    def get(self):
+        welcome_template = the_jinja_env.get_template('templates/volunteering.html')
+        self.response.write(welcome_template.render())
+class ReportPage(webapp2.RequestHandler):
+    def get(self):
+        welcome_template = the_jinja_env.get_template('templates/report.html')
+        self.response.write(welcome_template.render())
+class StandardsPage(webapp2.RequestHandler):
+    def get(self):
+        welcome_template = the_jinja_env.get_template('templates/standards.html')
+        self.response.write(welcome_template.render())
 app = webapp2.WSGIApplication([
     ('/', WelcomePage),
-    ('/seeking', SeekingPage)
+    ('/seeking', SeekingPage),
+    ('/volunteering', VolunteerPage),
+    ('/report', ReportPage),
+    ('/CommunityStandards', StandardsPage),
 ], debug=True)
