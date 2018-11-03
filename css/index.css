@@ -1,0 +1,19 @@
+.seeking_btn {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.seeking_btn:hover {
+    background-color: #ADD8E6; /* light blue */
+    color: white;
+}
+
+.volunteer_btn {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.volunteer_btn:hover {
+    background-color: #FFFF00; /* vibrant yellow */
+    color: white;
+}
