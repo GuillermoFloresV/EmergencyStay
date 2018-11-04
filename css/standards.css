@@ -1,0 +1,17 @@
+* {
+    font-size: 50px;
+    font-family: "comfortaa"
+}
+body{
+
+      background-image: linear-gradient(to right, orange, white);
+}
+#standards{
+    text-align:center;
+    text-transform: capitalize;
+}
+#emergency_disclaimer{
+    font-variant: small-caps;
+    font-weight: bold;
+    color:red;
+}

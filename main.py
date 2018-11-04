@@ -30,10 +30,15 @@ class StandardsPage(webapp2.RequestHandler):
     def get(self):
         welcome_template = the_jinja_env.get_template('templates/standards.html')
         self.response.write(welcome_template.render())
+class ReportAccepted(webapp2.RequestHandler):
+    def post(self):
+        welcome_template = the_jinja_env.get_template('templates/thank_you.html')
+        self.response.write(welcome_template.render())
 app = webapp2.WSGIApplication([
     ('/', WelcomePage),
     ('/seeking', SeekingPage),
     ('/volunteering', VolunteerPage),
     ('/report', ReportPage),
     ('/CommunityStandards', StandardsPage),
+    ('/ThankYou', ReportAccepted),
 ], debug=True)
