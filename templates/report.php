@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel="stylesheet" href="css/report.css">
+    <link rel="stylesheet" href="css/thank_you.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <title>
+        Thank You
+    </title>
     </head>
-    <body>
-    <title>Report</title>
-</head>
-  <body>
+      <body>
     <h1 style="color:red;">We apologize for any problems you have experienced using our service. Please fill out the form below.</h1>
   
 
@@ -32,16 +32,5 @@
     <button type="submit">Send your message</button>
   </div>
 </form>
-
-<style>
-body {
-  background: #E8D9C5;
-  animation: color-change 10s linear 5s infinite;
-}
-
-</style>
 </body>
 </html>
-
-
-

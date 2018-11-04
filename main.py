@@ -32,8 +32,20 @@ class StandardsPage(webapp2.RequestHandler):
         self.response.write(welcome_template.render())
 class ReportAccepted(webapp2.RequestHandler):
     def post(self):
-        welcome_template = the_jinja_env.get_template('templates/thank_you.html')
+        welcome_template = the_jinja_env.get_template('templates/2.php')
         self.response.write(welcome_template.render())
+        
+        def post(self):
+            isError = False
+            if (isError):
+                self.response.write("Error!")
+            else: 
+                self.redirect("/ThankYou")
+class ReportProcessed(webapp2.RequestHandler):
+    def get(self):
+        welcome_template = the_jinja_env.get_template('templates/Submitted')
+        self.response.write(welcome_template.render())
+        
 app = webapp2.WSGIApplication([
     ('/', WelcomePage),
     ('/seeking', SeekingPage),
@@ -41,4 +53,5 @@ app = webapp2.WSGIApplication([
     ('/report', ReportPage),
     ('/CommunityStandards', StandardsPage),
     ('/ThankYou', ReportAccepted),
+    ('Submitted', ReportProcessed),
 ], debug=True)
