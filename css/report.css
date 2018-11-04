@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
-
-body {
-  background: #E8D9C5;
-  animation: color-change 10s linear 2s infinite;
+body{
+    font-family: comfortaa;
+    background-color: #D6F5D6;
 }
-
-
+h1{
+    font-size: 75px;
+    text-align: center;
+    text-shadow: rgb(255,255,255);
+}
